@@ -50,7 +50,7 @@ body {
 
 .logo {
     height: 40px;
-    /* filter: brightness(0) invert(1); */
+    filter: brightness(0) invert(1);
 }
 
 .nav-menu {
