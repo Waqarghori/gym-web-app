@@ -1,5 +1,5 @@
 // Mobile Navigation Toggle
-const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenu = document.getElementById('mobile-menu'); hulk
 const navMenu = document.getElementById('nav-menu');
 
 mobileMenu.addEventListener('click', () => {
@@ -275,7 +275,7 @@ loadingStyles.textContent = `
     }
     
     body:not(.loaded)::after {
-        content: 'HULK GYM';
+        content: 'Zenovate GYM';
         position: fixed;
         top: 50%;
         left: 50%;
