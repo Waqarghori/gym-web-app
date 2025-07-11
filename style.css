@@ -50,7 +50,7 @@ body {
 
 .logo {
     height: 40px;
-    filter: brightness(0) invert(1);
+    /* filter: brightness(0) invert(1); */
 }
 
 .nav-menu {
@@ -108,7 +108,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 128, 0, 0.4)),
-                url('/placeholder.svg?height=1080&width=1920');
+                url('https://goldsgym.in/wp-content/uploads/2023/12/compress-strong-man-training-gym-min-scaled.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
