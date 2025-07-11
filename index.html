@@ -1,71 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>HULK GYM - Unleash Your Inner Strength</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/placeholder.svg?height=50&width=120" alt="HULK GYM" class="logo">
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#classes" class="nav-link">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trainers" class="nav-link">Trainers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#membership" class="nav-link">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<!-- Header/Navbar Section -->
-<div class="header">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="images/hulk-logo.png" alt="Logo" style="width: 100px;" />
-      </a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">UNLEASH THE <span class="hulk-text">HULK</span> WITHIN</h1>
+                <p class="hero-subtitle">Transform your body, mind, and spirit at the most powerful gym in the city</p>
+                <a href="#membership" class="cta-button">START YOUR TRANSFORMATION</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span><i class="fa-solid fa-bars"></i></span>
-      </button>
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <div class="section-header">
+                <h2>OUR <span class="hulk-text">CLASSES</span></h2>
+                <p>Choose from our variety of high-intensity training programs</p>
+            </div>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Strength Training">
+                        <div class="class-overlay">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Strength Training</h3>
+                        <p>Build raw power and muscle mass with our intensive strength training programs.</p>
+                        <div class="class-info">
+                            <span><i class="fas fa-clock"></i> 60 min</span>
+                            <span><i class="fas fa-fire"></i> High Intensity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="/placeholder.svg?height=250&width=350" alt="CrossFit">
+                        <div class="class-overlay">
+                            <i class="fas fa-running"></i>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>CrossFit</h3>
+                        <p>High-intensity functional movements that will push your limits every session.</p>
+                        <div class="class-info">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-fire"></i> Extreme</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Boxing">
+                        <div class="class-overlay">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Boxing</h3>
+                        <p>Unleash your inner fighter with our professional boxing training sessions.</p>
+                        <div class="class-info">
+                            <span><i class="fas fa-clock"></i> 50 min</span>
+                            <span><i class="fas fa-fire"></i> High Intensity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="/placeholder.svg?height=250&width=350" alt="HIIT">
+                        <div class="class-overlay">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>HIIT Training</h3>
+                        <p>Maximum results in minimum time with our high-intensity interval training.</p>
+                        <div class="class-info">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-fire"></i> Extreme</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-      <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Classes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trainers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <div class="section-header">
+                <h2>MEET OUR <span class="hulk-text">TRAINERS</span></h2>
+                <p>World-class trainers dedicated to your transformation</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="Mike Johnson">
+                        <div class="trainer-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mike Johnson</h3>
+                        <p class="specialty">Strength & Conditioning</p>
+                        <p class="experience">8+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="Sarah Williams">
+                        <div class="trainer-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Williams</h3>
+                        <p class="specialty">CrossFit & HIIT</p>
+                        <p class="experience">6+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="David Chen">
+                        <div class="trainer-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>David Chen</h3>
+                        <p class="specialty">Boxing & MMA</p>
+                        <p class="experience">10+ Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h2>CHOOSE YOUR <span class="hulk-text">POWER</span></h2>
+                <p>Select the membership plan that fits your transformation goals</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>BASIC</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Gym Access</li>
+                        <li><i class="fas fa-check"></i> Basic Equipment</li>
+                        <li><i class="fas fa-check"></i> Locker Room</li>
+                        <li><i class="fas fa-times"></i> Personal Training</li>
+                        <li><i class="fas fa-times"></i> Group Classes</li>
+                    </ul>
+                    <button class="pricing-btn">GET STARTED</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>PRO</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Full Gym Access</li>
+                        <li><i class="fas fa-check"></i> All Equipment</li>
+                        <li><i class="fas fa-check"></i> Premium Locker Room</li>
+                        <li><i class="fas fa-check"></i> 2 Personal Training Sessions</li>
+                        <li><i class="fas fa-check"></i> All Group Classes</li>
+                    </ul>
+                    <button class="pricing-btn">GET STARTED</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>PREMIUM</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> VIP Gym Access</li>
+                        <li><i class="fas fa-check"></i> Premium Equipment</li>
+                        <li><i class="fas fa-check"></i> VIP Locker Room</li>
+                        <li><i class="fas fa-check"></i> Unlimited Personal Training</li>
+                        <li><i class="fas fa-check"></i> All Classes + Nutrition Plan</li>
+                    </ul>
+                    <button class="pricing-btn">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero-section">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <h1>Unleash the Hulk Within</h1>
-      <p>Transform your body, strength, and mindset at Hulk Gym</p>
-      <a href="#contact" class="hero-btn">Join the Revolution</a>
-    </div>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>GET IN <span class="hulk-text">TOUCH</span></h2>
+                <p>Ready to start your transformation? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Strength Street<br>Muscle City, MC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-HULK</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@hulkgym.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 5AM-11PM<br>Sat-Sun: 6AM-10PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/placeholder.svg?height=60&width=140" alt="HULK GYM">
+                    </div>
+                    <p>Unleash your inner strength and transform your life at HULK GYM. Where legends are made.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Classes</h4>
+                    <ul>
+                        <li><a href="#">Strength Training</a></li>
+                        <li><a href="#">CrossFit</a></li>
+                        <li><a href="#">Boxing</a></li>
+                        <li><a href="#">HIIT Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Strength Street</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-HULK</li>
+                        <li><i class="fas fa-envelope"></i> info@hulkgym.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HULK GYM. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
