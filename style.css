@@ -150,14 +150,14 @@ body {
 
 .hulk-text {
     color: #00ff00;
-    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    /* text-shadow: 0 0 20px rgba(0, 255, 0, 0.8); */
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
     color: #f0f0f0;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
     animation: fadeInUp 1s ease 0.3s both;
 }
 
