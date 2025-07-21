@@ -1,4 +1,3 @@
-// Mobile Navigation Toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.getElementById('nav-menu');
 
@@ -7,7 +6,6 @@ mobileMenu.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
@@ -15,7 +13,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Navbar scroll effect
 const navbar = document.getElementById('navbar');
 let lastScrollTop = 0;
 
@@ -31,7 +28,6 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 });
 
-// Active navigation link highlighting
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
